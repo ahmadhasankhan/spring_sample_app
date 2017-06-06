@@ -15,3 +15,11 @@
 * Constructor Defined
 * Used together (Setter & Constructor)
 * It is index based not name base like setter injection
+
+### Autowire
+
+* Spring automatically Wires Beans
+* By Type
+* By Name
+* By Constructor
+* No or Nun

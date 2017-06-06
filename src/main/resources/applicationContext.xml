@@ -5,7 +5,8 @@
 
     <bean name="customerRepository" class="com.learning.repository.HibernateCustomerRepositoryImpl" />
 
-    <bean name="customerService" class="com.learning.service.CustomerServiceImpl">
-        <constructor-arg index="0" ref="customerRepository" />
+    <bean name="customerService" class="com.learning.service.CustomerServiceImpl" autowire="constructor">
+        <!--<constructor-arg index="0" ref="customerRepository" />-->
+
     </bean>
 </beans>
