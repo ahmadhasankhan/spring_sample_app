@@ -7,3 +7,11 @@
 * Can simply be a registry
 * XML configuration begins with the file 
 * Namespaces aid in configuration/validation
+
+
+### Constructor Injection
+
+* Guaranteed Contract
+* Constructor Defined
+* Used together (Setter & Constructor)
+* It is index based not name base like setter injection
