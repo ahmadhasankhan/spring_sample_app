@@ -2,7 +2,6 @@ package com.learning.service;
 
 import com.learning.model.Customer;
 import com.learning.repository.CustomerRepository;
-import com.learning.repository.HibernateCustomerRepositoryImpl;
 
 import java.util.List;
 
@@ -11,10 +10,16 @@ import java.util.List;
  */
 public class CustomerServiceImpl implements CustomerService {
 
-    private CustomerRepository customerRepository = new HibernateCustomerRepositoryImpl();
+    private CustomerRepository customerRepository;
 
     @Override
     public List<Customer> findAll() {
         return customerRepository.findAll();
     }
+
+    public void setCustomerRepository(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
+    }
+
+
 }
